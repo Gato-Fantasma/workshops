@@ -42,7 +42,8 @@ public class AnimControl : MonoBehaviour
     public void AnimationLogic()
     {
        animator.SetFloat("Horizontal", moveControl.Movevalue.x);
-
+       animator.SetFloat("Vertical", moveControl.Movevalue.y);
+       animator.SetBool("InGround", moveControl.InGround());
     }
     
 }
